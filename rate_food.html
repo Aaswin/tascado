@@ -1,0 +1,159 @@
+
+<html>
+<head>
+<title>Rate food @ Tasca  </title>
+<link rel="stylesheet" type="text/css" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+* {
+        font-family: Arial, "Free Sans";
+    }
+    #container {
+        color: #fff;
+  background:#000;
+    }
+    #container #question {
+        display: block;
+        padding: 10px;
+        font-weight: bold;
+        letter-spacing: -3px;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #container div {
+        font-weight: bold;
+        letter-spacing: -3px;
+        background: #0099cc;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 10px;
+        color: #ffffff;
+        border-left: 10px solid #333;
+        width: 10px;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0 0.5em 0.5em 0;
+        border-radius: 0 1.5em 1.5em 0;
+    }
+    #container div a {
+        border-radius: 0.3em;
+        text-decoration: none;
+        color: #0099cc;
+        padding: 5px 5px;
+        background: #333;
+        margin: 0 5px;
+    }
+    #container div a:hover {
+        color: #fff;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }* {
+        font-family: Arial, "Free Sans";
+    }
+    #container {
+        color: #fff;
+  background:#000;
+    }
+    #container #question {
+        display: block;
+        padding: =10px;
+        font-weight: bold;
+        letter-spacing: -3px;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 30px;
+    }
+    #container div {
+        font-weight: bold;
+        letter-spacing: -3px;
+        background: #0099cc;
+        margin-bottom: 5px;
+        padding: 0Spx;
+        font-size: 34px;
+        color: #ffffff;
+        border-left: 10px solid #333;
+        width: 300px;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0 0.5em 0.5em 0;
+        border-radius: 0 1.5em 1.5em 0;
+    }
+    #container div a {
+        border-radius: 0.3em;
+        text-decoration: none;
+        color: #0099cc;
+        padding: 5px 8px;
+        background: #333;
+        margin: 0 10px;
+    }
+    #container div a:hover {
+        color: #fff;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#container div a").click(function() {
+        $(this).parent().animate({
+           width: '+=50px'
+        }, 200);
+
+        $(this).prev().html(parseInt($(this).prev().html()) + 1);
+        return false;
+    });
+});
+
+</script>
+
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small" >
+  <div class="w3-bar w3-xlarge w3-red w3-opacity w3-hover-opacity-off" id="myNavbar" >
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="index.html#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="index.html#testimonials" class="w3-bar-item w3-button">TESTIMONIALS</a>
+	<a href="rate_food.html" class="w3-bar-item w3-button">RATE FOOD</a>
+	<a href="https://www.google.com/maps/place/Tasca+Do+Marinheiro/@38.733739,-9.178269,13z/data=!4m5!3m4!1s0x0:0x1736dd9242375ff9!8m2!3d38.717267!4d-9.14531?hl=en-US" class="w3-bar-item w3-button">LOCATE</a>
+    <a href="index.html#contact" class="w3-bar-item w3-button">CONTACT</a>	
+  </div>
+  </div><br><br>
+<div class="container">
+<div id="container">
+      <span id="question">What is your favorite food on Tasca Do Marinheiro ?</span>
+      <div><span>0</span><a href="">Vote</a>BUTTER LAMB</div>
+      <div><span>0</span><a href="">Vote</a>CHICKEN MANGO</div>
+      <div><span>0</span><a href="">Vote</a>pasta</div>
+      <div><span>0</span><a href="">Vote</a>LAMB MANGO </div>
+      <div><span>0</span><a href="">Vote</a>CHICKEN MUSHROOM</div>
+      <div><span>0</span><a href="">Vote</a>LAMB MUSHROOM </div>
+	  <div><span>0</span><a href="">Vote</a>TAGILIATELLE FUNGHI GAMBASS </div>
+	  <div><span>0</span><a href="">Vote</a>TAGLIATELLE MARE MONTE  </div>
+	   <div><span>0</span><a href="">Vote</a>HOUSE BURGER   </div>
+	    <div><span>0</span><a href="">Vote</a>BACALHAU A BRAS  </div>
+		 <div><span>0</span><a href="">Vote</a>ARROZ DE PATO  </div>	 
+  </div></div>
+<br>
+<div id="feedback_form" style="padding:10px;background-color:#ccccff">
+<h3>FEEDBACK</h3>
+<div class="container w3-xxlarge"  >
+<h3>Provide your valuable suggestion:</h3>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=achtyutbhusal@gmail.com&su=suggestion to tasca&body="subject" method="post" target="_blank">
+click for  quick email to us </a><br>
+</div>
+
+</div>
+<!-- Footer 2 contact -->
+<div class="w3-center w3-padding-10 w3-gray">
+  <p><center>mady by  kilbyapps ,© kilbyapps 
+  <br>
+ Tasca Do Marinheiro with w3schools
+</div>
+
+</body>
+</html> 

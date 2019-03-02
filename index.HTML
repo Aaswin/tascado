@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<title> Tasca Do Marinheiro </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="w3.css">
+<link rel="stylesheet" type="text/css" href="collapse_menu.css">
+<link rel="stylesheet" type="text/css" href="about_card.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<body onload=plusDivs(2)>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-red bold w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button"><b>HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#testimonials" class="w3-bar-item w3-button">TESTIMONIALS</a>
+	<a href="rate_food.html" class="w3-bar-item w3-button">RATE FOOD</a>
+	<a href="https://www.google.com/maps/place/Tasca+Do+Marinheiro/@38.733739,-9.178269,13z/data=!4m5!3m4!1s0x0:0x1736dd9242375ff9!8m2!3d38.717267!4d-9.14531?hl=en-US" class="w3-bar-item w3-button">LOCATE</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+	
+  </div>
+</div>  
+<!-- Header with image -->
+<header class="bgimg w3-display-container " id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Tasca Do<br>Marinheiro</span>
+  </b></span>
+  </div>
+</header>
+
+<div class="w3-container" id="abouts">
+<h2 style="text-align:center;background-color:#009900">Tasca Do Marinheiro in summary</h2>
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">ABOUT</li>
+  <li style="background-color: #eee"> One of the oldest restaurant in the locality we serve delicious food with freshness, health and unique taste being our priority at best price.</li> Special feature include Takeout, Seating, Waitstaff, Free Off-Street Parking, Television, Free Wifi,Full Bar ,Reservations  <li style="background-color: #eee"> We accept American Express,Mastercard,visa, Digital Payments,Credit Cards</li>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">OPENING HOURS</li>
+   <li class="grey">Sun:
+11:30AM - 12:00 AM</li>
+  <li class="grey">Tue - Wed:
+11:30AM - 3:30PM</li>
+  <li class="grey">Thu - Fri
+11:30AM - 3:00PM</li>
+  <li class="grey">Sat
+11:30AM - 3:30PM</li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">FOOD WE SERVE</li>
+    <li class="grey">cuisine</li>
+    <li>portugese,indian,nepalese,european</li>
+	   <li class="grey">cuisine</li>
+    <li>Lunch,Dinner,Drinks,After-hours</li>
+	</ul>
+</div>
+</div>
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-10 w3-xxlarge" id="menu">
+  <h1 class="w3-center w3-jumbo" style="margin-bottom:5px">OUR MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+<button class="collapsible">BUTTER CHICKEN---7.95€</button>
+<div class="content">
+  <p>Peito de frango com tomate,natas e manteiga</p>
+</div>
+<button class="collapsible">BUTTER LAMB---8.95€</button>
+<div class="content">
+  <p>Borregho com tomate,natas e manteiga</p>
+</div>
+<button class="collapsible">CHICKEN MANGO ---7.45€</button>
+<div class="content">
+  <p>frago com manga e natas</p>
+</div>
+<button class="collapsible">LAMB MANGO   ---8.45€</button>
+<div class="content">
+  <p>Borrego com manga e natas</p>
+</div>
+<button class="collapsible">CHICKEN MUSHROOM ---8.45€</button>
+<div class="content">
+  <p>Borrego com cogumelos frescos e molho de caril tradicional</p>
+</div>
+<button class="collapsible">LAMB MUSHROOM ---8.45€</button>
+<div class="content">
+  <p>Borrego com cogumelos frescos e molho de caril tradicional</p>
+</div>
+<button class="collapsible">TAGILIATELLE FUNGHI GAMBASS ---7.95€</button>
+<div class="content">
+  <p>Cogumelos frescos,camarao,tomate e natas</p>
+</div>
+<button class="collapsible">TAGLIATELLE MARE MONTE ---8.45€</button>
+<div class="content">
+  <p>Congumelos frescos,flambre,bacon,tomate e camarao</p>
+  </div>
+  <button class="collapsible">HOUSE BURGER ---7.95€</button>
+<div class="content">
+  <p>Hamburger com molho de natas a cogumelos</p>
+</div>
+<button class="collapsible">BACALHAU A BRAS ---9.45€</button>
+<div class="content">
+  <p>Bacalhau desfiado com ovos mexihos e batatta frita</p>
+</div>
+<button class="collapsible">ARROZ DE PATO ---9.45€</button>
+<div class="content">
+  <p>Duck Rice</p>
+</div>
+<U><a href="menu.jpg" download>
+DOWNLOAD MENU
+</a>
+</U>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    </div><br>
+<!-- myslides -->
+<div class="w3-content w3-display-container" style="background-color:#ccccff" id=foodslide>
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:20px">foodslides</h1>
+<div class="w3-display-container mySlides">
+  <img src="food1.jpg"  width="100%" height="500">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+food1
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="food2.jpg" style="width:100%" height="500">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+  food2
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="food3.jpg" style="width:100%" height="500">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+ food3
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="food4.jpg" style="width:100%" height="500">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+  food4
+  </div>
+</div>
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<!-- testimonials -->
+<div class="w3-container w3-padding-40 w3-blue-grey w3-grayscalew3-xlarge">
+  <div class="w3-content" id="testimonials">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:20px">what our customers have to say</h1>
+	<div class="textwidget custom-html-widget">
+<div id="google-reviews"></div>
+<link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDGnJ0TbeKOiagjyF_X_RZheQwzTd2TSc4&signed_in=true&libraries=places"></script>
+<script>
+jQuery(document).ready(function( $ ) {
+   $("#google-reviews").googlePlaces({
+        placeId: 'ChIJ_QV444EzGQ0R-V83QpLdNhc' //Find placeID @: https://developers.google.com/places/place-id
+      , render: ['reviews']
+      , min_rating: 4
+      , max_rows:6
+   });
+});
+</script></div>
+
+   
+  </div>
+</div>
+
+<!-- Footer contact -->
+<div class="w3-center w3-blue w3-padding-15px w3-xlarge" id="contact">
+  <p><center>Tasca Do Marinheiro<br>
+Rua Conceicao da Gloria 38 | <br>
+Near To Avenida de Liberdade, Lisbon<Br>     
+                                        1250-081, Portugal
+										+351 21 347 1594</ceter><Br>
+										<u> <a href="rate_food.html#feedback_form" class="w3-bar-item w3-button" style="background-color:tomato">write to us</a></u></p>
+</div>
+<!-- Footer 2 contact -->
+<div class="w3-center w3-padding-10px w3-gray">
+  <p><center>made my kilbyapps for<br>
+ Tasca Do Marinheiro
+</div>
+
+</body>
+</html>
