@@ -24,7 +24,7 @@
 .price .header {
   background-color: #111;
   color: white;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .price li {
@@ -36,6 +36,7 @@
 .price .grey {
   background-color: #eee;
   font-size: 20px;
+  padding:2px;
 }
 
 .button {
