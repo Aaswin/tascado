@@ -1,31 +1,76 @@
+@media screen and (max-width: 500px) {
+  .icolumn {
+    width: 100%;
+  }
+}
 body, html {height: 100%}
 body,h1,h2,h3,h4,h5,h6 {font-family: "georgia", sans-serif}
 .menu {display: none}
-.bgimg {
+
+
+.bgimg1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("tascaback.jpg");
-  min-height: 90%;}
+  min-height: 90%;
+  }
+ .bgimg2{
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("tabletasca.jpg");
+  min-height: 60%;
+ }
+ .bgimg3{
+ background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("foodcomp.jpg");
+  min-height: 60%;
+ }
+  
+  
 .collapsible {
   background-color:#f4cd41;
   color: black;
   cursor: pointer;
-  padding: 0px;
-  width: 70%;
-  border: 4px;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+  padding: 0 px;
+  width: 90%;
+  text-align: left; 
+  font-size: 20px;
 }
 
-.active, .collapsible:hover {
-  background-color: #f4f441;
-}
 
 .content {
-  padding: 2  2 px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-   font-size: 14px;
+	padding:0 0 0 px;
+  display: none;
+  position: left;
+  min-width: 50px;
+    background-color:#3e8e41;
+  color: black;
+}
+
+.dropdown:hover .content {
+	 background-color: #3e8e41;
+  display: block;
+}
+.dropdown:hover .collapsible {
+	 background-color: #3e8e41;
+  
+}
+.icolumn {
+  float: left;
+  width: 25%;
+  padding: 2px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .icolumn {
+    width: 100%;
+  }
 }
