@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="w3.css">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<style>
+.collapsible {
+  background-color:#eb7134;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #eb3434;
+}
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color:#ebb734;
+}
+#myNavbar{
+  background-color: #FF0000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  display: block;
+  transition: top 0.3s;
+}
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+</style>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("myNavbar").style.top = "0";
+  } else {
+    document.getElementById("myNavbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button"><b>HOME</a>
+	<a href="rate_food.html" class="w3-bar-item w3-button">RATE FOOD</a>
+		<a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+	<a href="https://www.google.com/maps/place/Tasca+Do+Marinheiro/@38.733739,-9.178269,13z/data=!4m5!3m4!1s0x0:0x1736dd9242375ff9!8m2!3d38.717267!4d-9.14531?hl=en-US" class="w3-bar-item w3-button">LOCATE</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+
+<h2>OUR FULL MENU</h2>
+<button class="collapsible">CAFÉ /COFFEE /CHÁ/ TEA</button>
+<div class="content">
+  <p>0,80€ Café /Coffee Normal Espresso <Br>
+1,40€ Café Duplo / Coffee Double Espresso<Br>
+0,80€ Descafeinado<Br>
+0,80€ Carioca De Café (Thin Coffee)<Br>
+1,20€ Café Americano<Br>
+1,00€ Chä / Tea Preto/Verde (Black/Green Tea)<Br>
+1,00€ Café Com Leite (Coffe With Milk)<Br>
+1,50€ Nepalese Tea SpeciaL<BR>
+<hr>
+<B>LASSI</B><BR>
+1,95€ Sweet Lassi<Br>
+2,50€ Manga/ Mango Lassi<Br>
+2,50€ Coconut Lassi<Br>
+2,95€ Banana Shake<BR><hr>
+
+<B>ÁGUA / WATER</B><BR>
+1,00€ AGua Sem Gás (Without Gas O.50l)<Br>
+1,50€ Agua Sem Gás (Without Gas 1,5l)<Br>
+1,00€ Agua Com Gás (With Gas 0.25l)<Br>
+1,50€ Agua Com Gás (With Gas 0.501-)<Br><hr>
+<B>REFRIGERANTES</B><Br>
+1,50€ Coca-Cola [Fanta /Ice Tea/ Nectar<Br>
+1,50€ 7up/Sprite<Br>
+1,50€ Sumol/Compal (Laranha/Manga/P<Br>
+2,00€ Energy Drinks<Br>
+2,00€ Sumol De Laranja Natural (Fresh Orange Juice)<Br><hr>
+<B>CERVEJA'S / BEER'S</B><Br>
+1,20€ Imperial (Small<Br>
+1,50€ Imperial Tulipa (Medium O.30l)<Br>
+2,50€ Imperial Caneca (Lafge O.40l)<Br>
+5,50€ Imperial Litrosa (Extra Large 14tr)<Br>
+1,00€ Sagres/Superbock (Branco Preta (O.20cl)<Br>
+1,50€ Sagres /Superbocwmed (0.33c )<Br>
+1,95€ Sagres Radler (Whh Lemon)<Br>
+1,50€ Sagres Preta (0.33cl)<Br>
+1,95€ Sagres Bomemia (0,33cl)<Br>
+1,50€ Cerveja Sem Alcool(Beer Without Alcool)<Br>
+1,95€ Heinekan Beer (0.33cl)<BR><hr>
+<B>IVA Incluido ä taxa em vigor / VAT at the rate in force<BR>
+co cei äoda Gloria 38 1250-081 Lisboa 121 608 17 65 | 920 345 582</B></p><hr>
+</div><BR>
+<button class="collapsible">ENTRADAS / STARTERS</button>
+<div class="content">
+  <p>
+3,25€ Entrada Portuguesa (Para 2 /3 Pessoas)<BR>
+Päo (Bread), Paté De Atum / Sardinha, Manteiga (Butter),<Br>
+Azeitonas (Olive Fruit)<Br>
+1,50€ Chamugas De Carne Ou Veg. (Meat Or Veg Samosas) Ii-In.
+4,95€ Mo:Mo (Dumpling ) Meat Or Veg. (Fry Or Steam / Frito Ou Vapor)<Br>
+2,50€ Spring Roll (Rolinho Primavera) Vegetarian/Vegetarianu<Br>
+2,95€ Pastas De Cebola (Onion Bhaji)<Br>
+3,95€ Pastas De Bacalhau (Crayons Cod)<Br>
+3,45€ Marisco (Sea Snacks)<Br>
+3,50€ Nuggets De Frango (Chicken Nuggets)<Br><Hr>
+<B>SALADA / SALAD</B><Br>
+4,95€ Sai-Ada Mista (Mix Salad )<Br>
+6,95€ Frango/Chicken (A1-Face, Tomato, Cenoura E Queijo)<Br>
+6,95€ Atijm / Tuna (Alface, Tomate, Cenoura, Fiambre, Ovo E Queijo)<Br>
+7,95€ Sai-Ada De Polvo (Octopus Salad)<Br><Hr>
+<B>SOPA / SOUP</B><Br>
+1,95€ Sopa De Legumes (Soup Veg.)<Br>
+2,99€ Sopa De Frango (Chicken Soup)<Br>
+2,50€ Sopa De Tomate (Tomato Soup)<Br><Hr>
+<B>COMIDA PARA CRIANCA</B><Br>
+3,95€ Hamburger<Br>
+4,45€ Bife De Frango Grelhado (Grilled Of Chicken Steak)<Br>
+3,95€ Omelete Simples (Simple Omelete)<Br>
+4,45€ Omelete De Queijo (Cheese Omelete)<Br>
+Served Mth Rice/Batata FritA<BR>
+</p>
+</div>
+<BR>
+<button class="collapsible">PRATOS DE CARIL / CURRY DISHES</button>
+<div class="content">
+  <p>7,95€ Butter Chicken
+(Peito de frango com tomate, natas e manteiga)<BR>
+7,95€ Chicken Mango
+(Frango com manga e natas)<BR>
+7,95 €Chicken Mushroom
+(Frango com cogumelos fresco e molho de. caril tradicional)<BR>
+6,95€ Chicken Currry (Caril De Frango)<Br>
+7,95€ Chicken Korama (Frango Com Molho De Natas,Coco E Castanh De Caju/ Chicken With Coconut & Cashew Nut)<Br>
+7,95€ Chicken Tikka Masala (Caril De Fran Com Tomate, Cebola Com Especiarias • Dry Grilled Chicken, Curry With Grilled Tomato, Onion) <Br>
+7,45€ Chicken Vindalo (Frango Com Batata Em Molho Picante De Especiarias / Chicken Wiht
+Potato In Hot Spice Sauce)<Br>
+6,99€ Chicken Sag (Frango Com Carl De Espinafres / Chicken With Spinach Curry)<Br>
+8,95€ Lamb Mushroom
+(Borrego com cogumelos frescos e molho ae caril tradicional)<BR>
+8,95€ Lamb Mango
+(Borrego com manga e natas.)<BR>
+8,95€ Butter Lamb
+	(Borregho com tomate, natas e manteiga)<BR>
+8,45€	Lamb Curry ( Caril De Borrego)<Br>
+8,95€	Lamb Sag (Borrego Com Caril De Espinafres/Lamb With Spinach Curry)<Br>
+9,95€	Lamb Korma (Borrego Com Molhodenatas, Coco E Castanha Caju/Lamb With Coconut And Cashew Nut)<Br>
+8,95€	Lamb Vindalo (Borrego Com Em Molho Picante Dees Ciarias/Lamb With
+	Potato In Hot Spice Sauce)<Br>
+9,95€	Lamb Tikka Masala (Caril De Borrego Com Tomate, Cebola
+	Especiarias/ Dry Grille
+	Lamb, Curry Mth Grilled Tomato, Onion)<Br>
+8,95€	Prawn Curry ( Carl De Camaröes)<Br>
+9,95€	Prawn Korma (Caril De Camaröes Com Coco, Nata E Especiarias / Prawn Curry With Coconut,
+	Cream Souce & Spices)<Br>
+9,95€	Prawn Tikka Masala
+	(Caril De Caramaräo Com Tomate, Cebola Com Especiarias / Dry Grilled
+	Prawn, Curry With Grilled Tomato, Onion)<Br>
+8,45€	Fish Curry (Caril De Pescada)<Br>
+	Served With Rice (Com Arroz)<BR><hr>
+<B>IVA Incluido taxa em vigor / VAT at the rate in force
+Rua da Conceiqäo da Gloria 38 250-081 Lisboa 21 608 17 65 920 345 582</B><hr></p>
+</div>
+<BR>
+<button class="collapsible">COMIDA Á MARINHEIRA /SEA FOOD </button>
+<div class="content">
+  <p>11 ,50€Arroz de marisco (Sea food rice)<BR>
+11 ,50€	Arroz de polvo (Octopus with rice)<BR>
+11 ,50€	Arroz de Gambas (Prawn rice)<BR>
+12,95€	Arroz de Tamboril (Monk fish rice)<BR>
+10,95€	Gambas a guilho (Prawns with olive oil & garlic)<BR>
+9,45€	Pataniscas de bacalhäu com arroz de tomate
+	(Salt code fish fritters with tomato rice)<BR>
+9,45€	Bacalhau å bräs<BR>
+	(Bacalhau desfiado com ovos mexihos e batata frita)<BR>
+9,45€	Atum å brås (Tuna fish desfiado com ovos mexihos D<BR><HR>
+<B>Peixe / Fish</B><BR>
+8,95€	Dourada grelhada c/Batata e salada
+	(Bream grilled serve with boil potato & salad)<BR>
+8,95€	Robalo grelhado
+	(Grilled sea bass with boil potato & salad)<BR>
+7,99€	Sardinhas assadas c/batata e salada
+	(Sardine grilled serve with boil potato & salad)<BR>
+8,95€	Salmäo grelhado c/Batata e salada)
+	( Salmon grilled serve with boil potato & Salad)<BR>
+9,99€	Bacalhau cozido
+	(Codfish boil serve with boil potato, chickpeas,egg)<BR>
+10,99€	Bacalhau assado
+	(Codfish grilled serve with boil potato, veg. & salad)<BR>
+6,45€	Calamaris
+	.Com arroz, Batata ou salada/with rice, fingerchips or salad)<BR><HR>
+<B>Carnes / Meats</B><BR>
+7,45€	Bitoque de vaca ä casa<BR>
+10,95€	Bife de Mostarda (Beef steak mustard)<BR>
+10,95€	Bife pimenta (Beef steak green pepper)<BR>
+10,95€	Bife de cogumelos (Beef steak with mushrooms)<BR>
+7,45€	Entermeada de porco grelhadas (Grilled of pork intersperse)<BR>
+7,99€	Bife de frango grelhado (Grilled of chicken steak)<BR></p>
+</div>
+<BR>
+<button class="collapsible">VEGETARIAN CURRY</button>
+<div class="content">
+  <p>Vegetarian Curry 
+6,99€ Daal Makhani (Lentilhas Com Manteiga / Lentils Curry With Butter <Br>
+6,99€ Chana Masala (Grao De Bico Em Delicioso Molho De Caril / Chickpeas Cooked In A Curry Sauce )<Br>
+6,45€ Mixed Vegetables / Mistura De Vegetais <Br> 
+6,95€ Palak Alu (Caril De Espinafres Com Batata/ Spinach Curry With Potato <Br>
+
+6,95€ Vegetable Korma (Caril De Legumes Com Coco, Natas Especirias / Vegetable Curry Wit Special Souce)<Br> 
+6,95€ Rajma Masala (Caril De Feijao ) <br>
+<hr>
+BOM APET1TE  ENJOY 
+<hr>
+<hr>
+</p>
+</div>
+<BR>
+<button class="collapsible">DESSERT</button>
+<div class="content">
+  <p>
+3,45€ Cheesecake <Br>
+3,45€ Creme De Leite (Milk Cream)<Br>
+ 2,50€ Musse De Chcolate (Chocolate Cream) <Br>
+ 2,50€ Salada De Frutas (Mix Fruit) <Br>
+ 2,50€ Gelado Normal (Ice Cream)<Br>
+ 3,45€ Gelado Com Choclate Quente (Ice Cream With Hot Chocolate) <br>
+ <hr>
+BOM APET1TE  ENJOY <hr>.</p>
+</div>
+<BR>
+<button class="collapsible">LICORES/LIQUEUR</button>
+<div class="content">
+  <p> 
+2,45€ Ginja Olaias Normal <Br>
+ 3,45€ Ginja Special<Br>
+ 3,45€ Amendoa Amarga <Br>
+ 3,45€ Vinho Do Porto<Br>
+ 2,95€ Licor Beirao <Br>
+ 3,95€ Beiley's <Br><hr>
+<B>AGUARDENT.ES /BRANDY</B><Br>
+ 3cl-----------5cl <Br>
+ 2,00€(3cl)-- 4,45€(5cl) Sao Domingos<Br>
+ 2,95€(3cl)-- 4,95€(5cl) Macieira<Br>
+ 2,95€(3cl)-- 4,95€(5cl) Brandy Craft<Br><hr> 
+<B>WHISKY NOVO /NEW WHISKY</B><Br> 
+3cl-----5cl <Br>
+1,95€--2,95€ Glden Loch <Br> 
+3,45€--4,95€ Ballantins <Br>
+3,45€--4,95€ Jemeson<Br>
+ 2,95€--4,45€ J&B <Br>
+ 3,45€--4,95€ Famous Grouse<Br> 
+ 3,45€--4,95€ Cuty Sark <Br>
+ 2,95€--4,45€ Grant's <Br>
+ 3,45€--4,95€ J.Walker Red<Br>
+ 3,95€--5,95€ J.Walker Black <Br><hr>
+<B>OLD WHISKY ALL 4.50C (12 YEARS)</B><Br>
+ 3cl------5cl <Br>
+ 3,95€----5,95€ Chivas Regal <Br>
+ 3 95€W ---5,95€ Cardhu<Br><hr>
+ <B>GIN</B><Br>
+ 3cl----5cl <Br>
+ 3,95€--5,95€ Bombay Dry Gin <Br>
+ 3,45€--4,95€ Bosford London Gin <Br>
+ 3,45c--4,95€ Bordons<Br>
+ 3,45€--4,95€ Beffeater <Br>
+ 3,95€--5,95€ Gin Tonica <Br><hr>
+<B>VODKA </B><Br>
+3cl----5cl <Br>
+3,45€--4,95€ Vodka Rondom <Br>
+3,45€--4,95€ Gordons (London Dry Gin)<Br>
+ 3,45€--4,95€ Eristoff Premium (White /Black)<Br>
+ 3,45€--4,95€ Simrnoff <Br>
+ 3,95€--5,45€ Absolut <Br><hr>
+<B>COCKTAIL ALCOOL </B><Br>
+4,45€ Caipirinha (Cachaca)  <Br>
+4,45€ Caipiroska (Vodka, Lima) <Br>
+ 5,45€ Mojitos (Rum Menta/Hortela)  <Br>
+ 5,45€ Jerisca (Gin,Mentailimao)  <BR><hr>
+<B>IVA Incluido a taxa em vigor / VAT at the rate in force<BR> Rua da Conceicao da Gloria 38 1250-081 Lisboa I 21 608 17 65 1 920 345 582<hr><hr> </B>
+</p>
+</div>
+<BR>
+<button class="collapsible">VINHO</button>
+<div class="content">
+  <p>
+<B>HOUSE WINE / VINHO DE CASA</B><BR> 
+1,75€ Copo De Vinho <Br>
+3,45€---0.5l Tinto Ou Branco<Br>
+ 5,45€-- 1l Tinto Ou Branco<Br> <hr>
+<B>VINHO VERDE / GREEN WINE </B><Br>
+37c1---75c1 <Br>
+5,95€--10,95€ Casal Garcia<Br>
+5,95€--9,95€  Gazela<Br>
+ 7,95€--14,45€ Muralhas <BR>
+ <hr>
+ 
+<B>VINHO ROSE / ROSE WINE</B><Br> 
+37c1---75c1<Br> 
+5,45€--9,45€ Mateus <Br> 
+5,45€--9,45€ Gatao <Br>
+5,45€--9,45€ Caiado <Br><hr>
+<b>7,45€ SANGRIA (TINTO/BRANCO)<Br> <hr>
+<B>APERITIVOS / APERITIF</B><Br> 
+2,95€ Martini Tinto (Red/White)<Br>
+ 2,95€ Moscatel <Br>
+ 2,95€ Campari <BR><hr>
+<B>IVA Incluido a taxa em vigor / VAT at the rate in force Rua da Conceicao da Gloria 38 1250-081 Lisboa I 21 608 17 65 1 920 345 582 </B><hr><BR>
+</p>
+</div>
+<BR>
+
+<button class="collapsible">VINHO TINTO/BRANGO (RED/WHITE WHINE) </button>
+<div class="content">
+  <p>
+37CL-----73CL<BR> 
+ 4,95€ --- 8,95€ JP<BR>
+ 4,95€ --- 8,95€  PORTA DE RAVESSA<BR>
+ 4,95€ --- 8,95€ PEGOES <BR>
+ 4,95€ --- 8,95€  GALITOS <BR>
+ 5,95€ --- 11,45€ ALANDRA<BR> 
+ 5,45€ --- 11,45€ BORBA<BR> 
+ 5,45€ --- 11,45€ MONTE VELHO<BR> 
+ ----------  13,95€   P. DE S. BRAZ<BR> 
+ ---------- 19,95€  GRACEZ (DOURO)<BR> 
+ --------- 12,95€  DIKAS (DOURO)<BR> 
+---------- 16,95€  ZE DO TEIHADO (DOURO)<BR> 
+---------- 11,95€   PERIQUITA <BR> 
+---------- 10,95€   REGUENGOS <BR> 
+---------- 12.95€  REGUENGOS (RESERVA) <BR> 
+---------- 22,45€  SEXY WIN<BR> 
+---------- 16,95€   SOBREIRO PREMIUM<BR> 
+---------- 20,95€   CAVAIO NEGRO <BR> 
+---------- 20,95€   ENCOSTE DE PATS (RESERVA)<BR> 
+---------- 19,45€   VINHA MARIA (RESERVA) <BR> <hr>
+  <B>DAO</B><BR> 
+11,95€  Grao Vasco (Tinto/Red)  <Br> 
+11,95€ Cabepa De Mocho (Branco/White)  <BR> 
+<hr>
+<B>IVA Incluido a taxa em vigor / VAT at the rate in force  <BR> Rua da Conceicao da Gloria 38 1250-081 Lisboa 121 608 17 65 1 920 345 582  <BR> </B><hr>
+</p>
+</div>
+<BR>
+<div class="bgimg2 w3-center  w3-padding-10px w3-xlarge" style="background-color:#f4d341" id="contact">
+  <p ><B><center>Tasca Do Marinheiro<br>
+Rua Conceicao da Gloria 38 | <br>
+Near To Avenida de Liberdade, Lisbon<Br>     
+                                        1250-081, Portugal<br>
+										reservation @
+										+351 21 347 1594</ceter><Br>
+										<u> <a href="rate_food.html#feedback_form" class="w3-bar-item w3-button" style="background-color:tomato">write to us</a></u></b></p>
+</div>
+<!-- Footer 2 contact -->
+<div class="w3-center w3-padding-10px w3-orange">
+  <p><center>made my kilbyapps for<br>
+ Tasca Do Marinheiro
+&copy; kilbyapps
+	
+	
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
