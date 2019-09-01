@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<title> Tasca Do Marinheiro </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="w3.css">
+<link rel="stylesheet" type="text/css" href="collapse_menu.css">
+<link rel="stylesheet" type="text/css" href="about_card.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("myNavbar").style.top = "0";
+  } else {
+    document.getElementById("myNavbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+function DownloadAlert() {
+  alert("menu downloading");
+}
+</script>
+<style>
+#myNavbar{
+  background-color: #FF0000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  display: block;
+  transition: top 0.3s;
+}
+</style>
+<body onload=plusDivs(2)>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button"><b>HOME</a>
+	<a href="rate_food.html" class="w3-bar-item w3-button">RATE FOOD</a>
+		<a href="menu.html" class="w3-bar-item w3-button">MENU</a>
+	<a href="https://www.google.com/maps/place/Tasca+Do+Marinheiro/@38.733739,-9.178269,13z/data=!4m5!3m4!1s0x0:0x1736dd9242375ff9!8m2!3d38.717267!4d-9.14531?hl=en-US" class="w3-bar-item w3-button">LOCATE</a>
+    <a href="#contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>  
+<!-- Header with image -->
+<header class="bgimg1 w3-display-container " id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Opens 11:30am-3:30pm and 6:30pm-2am</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:50px ;text-shadow: 4px 4px #f47941 ">Tasca Do <Br>Marinheiro</span>
+  </b></span>
+  </div>
+</header>
+
+<div class="w3-container" id="abouts" style="background-color:#f4d341">
+<h2 style="text-align:center;background-color:white">Tasca Do Marinheiro in summary</h2>
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:black">ABOUT</li>
+  <li class="grey"> One of the oldest restaurant in the locality we serve delicious food with freshness, health and unique taste being our priority at best price.<br>We accept Mastercard,visa, Digital Payments,Credit Cards</li>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:black">Special features</li>
+   <li class="grey">Takeout</li>
+  <li class="grey">Seating</li>
+  <li class="grey">Waitstaff</li>
+  <li class="grey">Television and free wifi</li>
+   <li class="grey">Full Bar</li>
+  <li class="grey"><a href="#contact">Reservations</a></li>
+  </ul>
+</div>
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:black">FOOD WE SERVE</li>
+    <li class="grey">CUISINE</li>
+    <li class="grey">portugese,indian</li>
+	<li class="grey">nepalese,european</li><Br>
+	   <li class="grey">MEALS</li>
+    <li class="grey">Lunch,Dinner</li>
+	<li class="grey">Drinks,After-hours</li>
+	
+	</ul>
+</div>
+</div>
+<!-- Menu Container -->
+<div class="w3-container w3-black padding-10 w3-large" id="menu">
+  <h1 class="w3-center w3-jumbo" style="margin-bottom:5px">OUR MENU</h1>
+
+<a href="menu.html" >
+see full menu
+</a>  <br>
+<U><a href="menu.pdf" download onclick="DownloadAlert()">
+DOWNLOAD MENU
+</a>
+</U>
+
+    </div><br>
+<!-- myslides -->
+<div class="w3-content w3-display-container" style="background-color:#e8f441" id=foodslide>
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:10px ;background-color:#f49141">our food galary</h1>
+<div class=  "mySlides">
+  <img src="food8.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food9.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food10.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food11.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food13.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food14.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food15.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food16.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food18.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food19.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food20.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food21.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food22.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food23.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food24.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food25.jpeg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food26.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food27.jpeg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food17.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food12.jpg" style="width:100%" height="500">
+</div>
+<div class=" mySlides">
+  <img src="food28.jpeg" style="width:100%" height="500">
+</div>
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName(" mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+
+<br>
+
+<!-- testimonials -->
+<div class="bgimg3 w3-container w3-padding-40 w3-black w3-large">
+  <div class="w3-content"  id="testimonials">
+    <h1 class="w3-center" style="margin-bottom:20px ;background-color:#f4a041">what our customers have to say</h1>
+	<div class="textwidget custom-html-widget"  style="color:black;background-color:#ffffff; font-weight:bold ;opacity:0.7;filter:alpha(opacity=60)">
+<div id="google-reviews"></div>
+<link rel="stylesheet" href="https://cdn.rawgit.com/stevenmonson/googleReviews/master/google-places.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDGnJ0TbeKOiagjyF_X_RZheQwzTd2TSc4&signed_in=true&libraries=places"></script>
+<script>
+jQuery(document).ready(function( $ ) {
+   $("#google-reviews").googlePlaces({
+        placeId: 'ChIJ_QV444EzGQ0R-V83QpLdNhc'
+      , render: ['reviews']
+      , min_rating: 4
+      , max_rows:5
+   });
+});
+</script></div>
+
+  </div>
+ <div class="row">
+    <div class="icolumn">
+    <img src="Tripaward.jpg" alt="award by tripadvisor" style="width:100%">
+  </div>
+  <div class="icolumn">
+    <img src="reviewtrip1.png" alt="reviewtrip1" style="width:100%">
+  </div>
+  <div class="icolumn">
+    <img src="reviewtrip2.png" alt="reviewtrip2" style="width:100%">
+  </div>
+  <div class="icolumn">
+    <img src="reviewtrip3.png" alt="review trip 2" style="width:100%">
+  </div>
+  
+</div> 
+  
+</div>
+
+<!-- Footer contact -->
+<div class="bgimg2 w3-center  w3-padding-10px w3-xlarge" style="background-color:#f4d341" id="contact">
+  <p ><B><center>Tasca Do Marinheiro<br>
+Rua Conceicao da Gloria 38 | <br>
+Near To Avenida de Liberdade, Lisbon<Br>     
+                                        1250-081, Portugal<br>
+										reservation @
+										+351 21 347 1594</ceter><Br>
+										<u> <a href="rate_food.html#feedback_form" class="w3-bar-item w3-button" style="background-color:tomato">write to us</a></u></b></p>
+</div>
+<!-- Footer 2 contact -->
+<div class="w3-center w3-padding-10px w3-orange">
+  <p><center>made my kilbyapps for<br>
+ Tasca Do Marinheiro
+&copy; kilbyapps
+	
+	
+</div>
+
+</body>
+</html>
